@@ -748,8 +748,23 @@ http://www.tooplate.com/view/2098-health
     background: #4267b2;
   }
 
+  /*---------------------------------------
+      FORM             
+  -----------------------------------------*/
 
+  #google-form-wrapper{
+    min-height: 300px;
+    max-height: 500px;
+    height: 100vh;
+  }
 
+  @media (max-width: 576px){
+    /*only for iOS iframe problem*/
+    #google-form-wrapper{
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+    }
+  }
   /*---------------------------------------
       APPOINTMENT             
   -----------------------------------------*/
