@@ -186,14 +186,14 @@ http://www.tooplate.com/view/2098-health
   }
 
 
-  #about, #team, #news,#form,
+  #about, #team, #news, #form, #best-products,
   #news-detail {
     position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-  #news, #service ,#form {
+  #news, #service ,#form ,#best-products{
     text-align: center;
   }
 
@@ -245,7 +245,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   @-webkit-@keyframes spinner {
-    to {transform: rotate(360deg);}
+    to {trans#form: rotate(360deg);}
   }
 
   @keyframes spinner {
@@ -626,6 +626,10 @@ http://www.tooplate.com/view/2098-health
     position: relative;
   }
 
+  #news .news-item{
+    padding-bottom: 30px;
+  }
+
   .news-image img {
     width: 100%;
   }
@@ -752,6 +756,10 @@ http://www.tooplate.com/view/2098-health
       FORM             
   -----------------------------------------*/
 
+  #form{
+    background: #f9f9f9;
+  }
+
   #google-form-wrapper{
     min-height: 300px;
     max-height: 500px;
@@ -759,12 +767,23 @@ http://www.tooplate.com/view/2098-health
   }
 
   @media (max-width: 576px){
-    /*only for iOS iframe problem*/
+    /*only for iOS iframe problem https://blog.csdn.net/renfufei/article/details/37663355*/
     #google-form-wrapper{
       -webkit-overflow-scrolling: touch;
       overflow-y: scroll;
     }
   }
+
+    /*---------------------------------------
+      best-products             
+  -----------------------------------------*/
+
+  /*#best-products */
+
+  #examples .slide-item{
+    text-align: left;
+  }
+
   /*---------------------------------------
       APPOINTMENT             
   -----------------------------------------*/

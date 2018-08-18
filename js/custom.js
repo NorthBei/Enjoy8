@@ -15,16 +15,41 @@
 
 
     // Owl Carousel
-    $('.owl-carousel').owlCarousel({
+    $('#header-slide.owl-carousel').owlCarousel({
       animateOut: 'fadeOut',
       items:1,
       loop:true,
       autoplay:true,
-    })
+    });
+
+    $('#examples.owl-carousel').owlCarousel({
+      animateOut: 'fadeOut',
+      loop:false,
+      margin:15,
+      dots:false,
+      nav:true,
+      navText:['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+          },
+          576:{
+              items:2,
+          },
+          768:{
+              items:3,
+          },
+          992:{
+              items:4,
+          }
+      }
+    });
+    
 
 
     // PARALLAX EFFECT
-    $.stellar();  
+    // $.stellar();
 
 
     // SMOOTHSCROLL
